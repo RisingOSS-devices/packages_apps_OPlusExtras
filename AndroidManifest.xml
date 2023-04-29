@@ -37,14 +37,18 @@
             android:label="@string/oplus_extras_title"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
+
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="1" />
             <meta-data
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_oplus_extras" />
             <meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.homepage" />
+                android:value="com.android.settings.category.ia.system" />
             <meta-data android:name="com.android.settings.summary"
                 android:resource="@string/oplus_extras_summary" />
         </activity>
